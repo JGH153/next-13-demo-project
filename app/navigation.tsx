@@ -14,6 +14,7 @@ const links: NavLink[] = [
   { href: "/error", label: "Error" },
   { href: "/earth", label: "Earth" },
   { href: "/context", label: "Context" },
+  { href: "/shop/42?a=123", label: "Shop" },
   { href: "/about", label: "About" },
 ];
 
