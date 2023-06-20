@@ -13,6 +13,7 @@ const links: NavLink[] = [
   { href: "/slow", label: "Slow" },
   { href: "/error", label: "Error" },
   { href: "/earth", label: "Earth" },
+  { href: "/context", label: "Context" },
   { href: "/about", label: "About" },
 ];
 
