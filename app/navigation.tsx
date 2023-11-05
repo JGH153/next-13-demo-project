@@ -10,6 +10,7 @@ interface NavLink {
 
 const links: NavLink[] = [
   { href: "/", label: "Dashboard" },
+  { href: "/revalidate", label: "Revalidate" },
   { href: "/action", label: "Server Action" },
   { href: "/slow", label: "Slow" },
   { href: "/error", label: "Error" },
