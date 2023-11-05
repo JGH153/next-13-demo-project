@@ -13,7 +13,6 @@ export default async function Slow() {
       <p className="text-xl">This is the slow page</p>
       <div>Data: {slowDataText}</div>
       <Suspense fallback={<div>Loading...</div>}>
-        {/* @ts-expect-error Async Server Component */}
         <Slowest />
       </Suspense>
     </main>
