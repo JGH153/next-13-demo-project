@@ -1,8 +1,9 @@
 export default function ErrorPage() {
-
   // this will be persistent until reload
-  if (Math.random() > 0.5) {
-    throw new Error("This is an error");
+  if (process.env.NODE_ENV === "development") {
+    if (Math.random() > 0.5) {
+      throw new Error("This is an error");
+    }
   }
 
   return (
