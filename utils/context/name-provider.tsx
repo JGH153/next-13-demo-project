@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState } from "react";
+import { createContext, use, useState } from "react";
 
 interface NameContext {
   name: string;
@@ -10,7 +10,7 @@ interface NameContext {
 const NameContext = createContext<NameContext | null>(null);
 
 export const useNameContext = () => {
-  const context = useContext(NameContext);
+  const context = use(NameContext);
   if (!context) {
     throw new Error("useNameContext must be used within a NameProvider");
   }
