@@ -1,5 +1,4 @@
 import { getServerBasePath } from "@/utils/url-helpers";
-import { revalidatePath } from "next/cache";
 import { unstable_noStore as noStore } from 'next/cache';
 
 function randomIntFromInterval(min: number, max: number) {
